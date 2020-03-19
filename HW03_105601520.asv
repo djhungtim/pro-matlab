@@ -20,13 +20,15 @@ fprintf('\n')
 fprintf('mean distance from the Sun (AU)')
 fprintf('\t%4.2f\t',mean_distance_from_the_Sun_AU)
 fprintf('\n')
-fprintf('rotation period (in Earth days)')
+fprintf('rotation period (in Earth days)\t')
+fprintf('\t%4.2f\t',rotation_period_in_Earth_days)
+fprintf('\n')
+fprintf('atmospheric composition\t')
+fprintf('\t%-12s', atmospheric_composition)
+fprintf('\n')
+fprintf('rings? \t\t\t\t')
+fprintf('\t%-12s', rings)
 
-
-
-%%
-formatSpec = "4.2f       %4.2f     %4.2f  %4.2f \n rotation period (in Earth days)       %4.2f       %4.0f     %4.2f     %4.2f   %4.2f        %4.2f     %4.2f   %4.2f \n atmospheric composition               %s       %s      %s %s  %s  %s  %s  %s\n rings?                                                %s            %s         %s        %s     %s          %s       %s    %s\n"; %create formSpec for fprintf
-fprintf(formatSpec, name, mean_distance_from_the_Sun_AU, rotation_period_in_Earth_days, atmospheric_composition, rings) % print text
 
 %problem3
 x = [1 2 3 4];
@@ -34,14 +36,17 @@ y = [4 3 2 1];
 
 o = zeros(1, 4); %origin point
 
+rho = zeros(1 ,4); % for Preallocation
 for idx = 1:4
 rho(idx) = sqrt( (x(idx) - o(idx))^2 + (y(idx) - o(idx))^2 ); %calculate distance between origin point
 end
 
+rx = zeros(1, 4); % for Preallocation
 for idx = 1:4
 rx(idx) = sqrt( (x(idx) - o(idx))^2 ); %calculate distance between x axis
 end
 
+ry = zeros(1, 4); % for Preallocation
 for idx = 1:4
 ry(idx) = sqrt( (y(idx) - o(idx))^2 ); %calculate distance between y axis
 end

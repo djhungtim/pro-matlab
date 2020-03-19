@@ -36,14 +36,17 @@ y = [4 3 2 1];
 
 o = zeros(1, 4); %origin point
 
+rho = zeros(1 ,4); % for Preallocation
 for idx = 1:4
 rho(idx) = sqrt( (x(idx) - o(idx))^2 + (y(idx) - o(idx))^2 ); %calculate distance between origin point
 end
 
+rx = zeros(1, 4); % for Preallocation
 for idx = 1:4
 rx(idx) = sqrt( (x(idx) - o(idx))^2 ); %calculate distance between x axis
 end
 
+ry = zeros(1, 4); % for Preallocation
 for idx = 1:4
 ry(idx) = sqrt( (y(idx) - o(idx))^2 ); %calculate distance between y axis
 end
