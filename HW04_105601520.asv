@@ -21,25 +21,14 @@ new_float_matrix = cat(2, mercury, jupiter);
 % create a matrix with rand range from 3 to 10
 random_3_10 = rand(5).*10;
 random_3_10(random_3_10 < 3) = 0;
-round(random_3_10)
+round(random_3_10);
 
 %problem 3.
 r = [1, 2, 3, 4]; %radius
 theta = pi/6;
 phi = pi/3;
 
-% transform sph. to cart. coord.
 cartX = r.*sin(theta).*cos(phi);
-cartY = r.*sin(theta).*sin(phi);
-cartZ = r.*cos(theta);
 
-% 4 points of XYZ each row represent one point
-XYZ = [cartX' cartY' cartZ'];
 
-% transform cart. to cyli. coord.
-rho = sqrt((cartX.^2 + cartY.^2));
-phi_cyli = atan(cartY./cartX);
-Z = cartZ;
 
-% 4 points of RhoPhiZ each row represent one point
-RhoPhiZ = [rho' phi_cyli' Z'];
