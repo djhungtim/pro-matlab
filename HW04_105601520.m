@@ -19,7 +19,7 @@ new_float_matrix = cat(2, mercury, jupiter);
 
 % problem 2.
 % create a matrix with rand range from 3 to 10
-random_3_10 = rand(5).*10;
+random_3_10 = rand(5).*10 ;
 random_3_10(random_3_10 < 3) = 0;
 round(random_3_10)
 
