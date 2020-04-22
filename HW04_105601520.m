@@ -38,7 +38,7 @@ XYZ = [cartX' cartY' cartZ'];
 
 % transform cart. to cyli. coord.
 rho = sqrt((cartX.^2 + cartY.^2));
-phi_cyli = atan(cartY./cartX);
+phi_cyli = atan2(cartY./cartX);
 Z = cartZ;
 
 % 4 points of RhoPhiZ each row represent one point

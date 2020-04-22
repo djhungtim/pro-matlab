@@ -38,8 +38,8 @@ r = m*(norm(v_per))/(q*norm(B));
 
 theta = atan(v_per(2)/v_per(1))+pi/2;
 
-xc=r0(1)+ r*cos(theta);
-yc=r0(2)+ r*sin(theta);
+xc=r0(1) + r*cos(theta);
+yc=r0(2) + r*sin(theta);
 
 w = norm(v_per)/r;
 

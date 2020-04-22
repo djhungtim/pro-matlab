@@ -16,6 +16,7 @@ plot(x1,y1, 'dm')
 ylim([0 50]);
 xlabel('Distance/Period')
 ylabel('Orbital velocity(km/sec)')
+grid on
 
 subplot(2,2,2)
 x2 = escape;
@@ -24,6 +25,7 @@ plot(x2,y2,'or')
 ylim([0 400]);
 xlabel('Escape velocity(km/sec)')
 ylabel('Mass (Earth = 1)')
+box off
 
 subplot(2,2,3)
 x3 = diameter;
