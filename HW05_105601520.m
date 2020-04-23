@@ -80,5 +80,5 @@ text(-2.1, 2.1, 'y	\prime','color','b')
 plot([c(1), 2], [c(2), 3], 'k:')  %x' vertical line
 plot([e(1), 2], [e(2), 3], 'k:')  %y' horizontal line
 hold off
-
+axis off
 
