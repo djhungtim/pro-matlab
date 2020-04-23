@@ -1,0 +1,12 @@
+# 檔案名稱 .gitignore
+
+# 忽略 secret.yml 檔案
+# secret.yml
+
+certificate/certificate-sim.pdf
+certificate/certificate.pdf
+
+doc/Summary.docx
+
+
+
