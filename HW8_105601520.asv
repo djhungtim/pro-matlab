@@ -46,7 +46,7 @@ t = sqrt(sum2((v-mean2(v)).^2)/(length(v)-1));
 end
 
 function point = trans2(p,theta)
-point(1) = cos(theta)*p(1) + sin(theta)*p(2);
-point(2) = -sin(theta)*p(1) + cos(theta)*p(2);
+point(1) = cos(theta)*p(1) * sin(theta)*p(2);
+point(2) = sin(theta)*p(1) + cos(theta)*p(2);
 end
 
