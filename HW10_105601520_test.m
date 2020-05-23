@@ -39,16 +39,20 @@ end
 
 
 load ionosphere.mat
+rng('shuffle')
 
 
-xrandom = randi([1 351], 1, 246);
-yrandom = xrandom;
+rng(1);
+xtrain = randi([1 351], 1, 246);
+ytrain = xtrain;
 
+rng(2);
 xtest = randi([1 351], 1, 105);
 ytest = xtest;
 
-X_train = X(xrandom, :);
-Y_train = Y(yrandom, :);
+
+X_train = X(xtrain, :);
+Y_train = Y(ytrain, :);
 
 X_test = X(xtest, :);
 Y_test = Y(ytest, :);
